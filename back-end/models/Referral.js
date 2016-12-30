@@ -7,10 +7,10 @@ const referralSchema = new Schema({
     isScheduled:                    String,
     referredToStatus :              String,
     ruralCode:                      String,
-    referredBy:                     [{  type:     Schema.Types.ObjectId, 
+    _referredBy:                    [{  type:     Schema.Types.ObjectId, 
                                         ref:    'ReferralHistory'     
                                     }],
-    referredTo:                     [{  type:     Schema.Types.ObjectId, 
+    _referredTo:                    [{  type:     Schema.Types.ObjectId, 
                                         ref:    'ReferralHistory'     
                                     }],
     patientFirstName:               String,
