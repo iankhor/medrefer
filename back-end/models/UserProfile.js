@@ -3,8 +3,9 @@ const Schema = mongoose.Schema
 const db = require('./_init')
 
 const userProfileSchema = new Schema({
-    emmail :                String,
-    password :              String,
+    // _user:                  [{ type: Schema.Types.ObjectId,
+    //                            ref : ''
+    //                         }],
     firstName:              String,
     lastName:               String,
     dateOfBirth :           Date,
