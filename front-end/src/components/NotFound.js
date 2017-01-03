@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import StaticHTMLTemplate from './_TemplateStaticHTML'
 
 class NotFound extends Component {
     render(){
