@@ -7,7 +7,7 @@ class Body extends Component {
     render(){
         return(
             <div className="generic-center dummy-height"> 
-                <h1>This is a Body page</h1>
+                <h1>[This is a Body Wrapper]</h1>
                 <BodySection1 />
                 <BodySection2 />
                 <BodySection3 />
