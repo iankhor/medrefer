@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './components/App';
 import FormTest from './components/FormTest';
 import NotFound from './components/NotFound';
-import './index.css';
+import './css/style.css'
 import { BrowserRouter , Match, Miss } from 'react-router'
 
 
