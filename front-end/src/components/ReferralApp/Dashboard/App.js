@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import Header from '../Shared/Header'
+import Header from '../../Shared/Header'
 import Body from './Body'
-import Footer from './Footer'
+import Footer from '../../Shared/Footer'
 
-class ReferralApp extends Component {
+class ReferralDashboard extends Component {
     render(){
         return(
             <div className="generic-center borderless"> 
-                Referral App page
+                ReferralDashboard page
                 <Header />
                 <Body />
                 <Footer />
@@ -16,5 +16,5 @@ class ReferralApp extends Component {
     }
 }
 
-export default ReferralApp
+export default ReferralDashboard
 

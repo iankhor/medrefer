@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MainPage from './components/MainPage/App';
-import ReferralApp from './components/ReferralApp/App';
+import ReferralDashboard from './components/ReferralApp/Dashboard/App';
+import Referral from './components/ReferralApp/Referral/App';
 import FormTest from './components/_Example/FormTest';
 import NotFound from './components/NotFound';
 import './css/style.css'
@@ -13,7 +14,8 @@ const Root = () => {
     <BrowserRouter>
       <div>
         <Match exactly pattern="/" component={MainPage} />  
-        <Match exactly pattern="/referral" component={ReferralApp} />  
+        <Match exactly pattern="/dashboard" component={ReferralDashboard} />  
+        <Match exactly pattern="/referral" component={Referral} />  
         <Match exactly pattern="/formtest" component={FormTest} />  
         <Miss component={NotFound} />  
       </div>
