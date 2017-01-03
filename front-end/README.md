@@ -20,24 +20,24 @@
 
 8. In App.js, add the following code.  
 ```
-import React, { Component } from 'react'
+import React, { Component } from 'react'  
+  
+class App extends Component {  
+    render(){  
+        return(  
+            &lt;div&gt;    
+                App page  
+            &lt;/div&gt;   
+        )  
+    }  
+}  
 
-class App extends Component {
-    render(){
-        return(
-            \<div\> 
-                // App page
-            </div>
-        )
-    }
-}
-
-export default App
+export default App  
 ```
 
 9. In NotFound.js, add the following code.
 ```
-import React, { Component } from 'react'  
+import React, { Component } from 'react'   
 import StaticHTMLTemplate from './_TemplateStaticHTML'  
 
 class NotFound extends Component {  
@@ -55,30 +55,29 @@ export default NotFound
 
 10. In the index.js file, add the following code.
 ```
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/App';
-import NotFound from './components/NotFound';
-import './index.css';
-import { BrowserRouter , Match, Miss } from 'react-router'
+import React from 'react';  
+import ReactDOM from 'react-dom';  
+import App from './components/App';  
+import NotFound from './components/NotFound';  
+import './index.css';  
+import { BrowserRouter , Match, Miss } from 'react-router'  
 
 
-const Root = () => {
-  return (
-    <BrowserRouter>
-      <div>
-        <Match exactly pattern="/" component={App} />  
-        <Miss component={NotFound} />  
-      </div>
-    </BrowserRouter>
-  )
-}
+const Root = () =&gt;  {  
+  return (  
+    &lt;BrowserRouter&gt;   
+      &lt;div&gt;   
+        &lt;Match exactly pattern="/" component={App} /&gt;   
+        &lt;Miss component={NotFound} /&gt;     
+      &lt;/div&gt;   
+    &lt;/BrowserRouter&gt;   
+  )  
+}  
 
 
-ReactDOM.render(
-  <Root />,
-  document.getElementById('root')
-);
-
+ReactDOM.render(  
+  &lt;Root /&gt; ,  
+  document.getElementById('root')  
+);  
 ```
 
