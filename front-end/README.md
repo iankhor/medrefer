@@ -9,12 +9,12 @@
 ```npm i react-router@4.0.0-alpha.4 history --save```
 
 4. create a folder called components under src  
-```src\components```  
+```src\components```
 
 5. Delete the original App.js, App.css files in src  
 
 6. In index.js, import the functions as follows  
-```import { BrowserRouter, Match, Miss} from 'react-router' ```
+```import { BrowserRouter, Match, Miss } from \'react-router\' ```
 
 7. In the components folder, create a file called App.js and NotFound.js
 
