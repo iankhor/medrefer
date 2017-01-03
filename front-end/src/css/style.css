@@ -9,6 +9,10 @@ h1 {
   text-align: center;
 }
 
+.dummy-height {
+  min-height: 500px;
+}
+
 .borderless {
   border: none;
 }
