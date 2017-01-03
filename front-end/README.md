@@ -19,65 +19,65 @@
 7. In the components folder, create a file called App.js and NotFound.js
 
 8. In App.js, add the following code.  
-```
-import React, { Component } from 'react'  
-  
-class App extends Component {  
-    render(){  
-        return(  
-            &lt;div&gt;    
-                App page  
-            &lt;/div&gt;   
-        )  
-    }  
-}  
+```html
+import React, { Component } from 'react'
 
-export default App  
+class App extends Component {
+    render(){
+        return(
+            <div> 
+                App page
+            </div>
+        )
+    }
+}
+
+export default App
 ```
 
 9. In NotFound.js, add the following code.
-```
-import React, { Component } from 'react'   
-import StaticHTMLTemplate from './_TemplateStaticHTML'  
+```html
+import React, { Component } from 'react'
+import StaticHTMLTemplate from './_TemplateStaticHTML'
 
-class NotFound extends Component {  
-    render(){  
-        return(  
-            &lt;div&gt;   
-                &lt;h1&gt; Not Found page&lt;/h1&gt;  
-            &lt;/div&gt;  
-        )  
-    }  
-}  
+class NotFound extends Component {
+    render(){
+        return(
+            <div> 
+                <h1> Not Found page</h1>
+            </div>
+        )
+    }
+}
 
-export default NotFound  
+export default NotFound
 ```
 
 10. In the index.js file, add the following code.
-```
-import React from 'react';  
-import ReactDOM from 'react-dom';  
-import App from './components/App';  
-import NotFound from './components/NotFound';  
-import './index.css';  
-import { BrowserRouter , Match, Miss } from 'react-router'  
+```html
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/App';
+import NotFound from './components/NotFound';
+import './index.css';
+import { BrowserRouter , Match, Miss } from 'react-router'
 
 
-const Root = () =&gt;  {  
-  return (  
-    &lt;BrowserRouter&gt;   
-      &lt;div&gt;   
-        &lt;Match exactly pattern="/" component={App} /&gt;   
-        &lt;Miss component={NotFound} /&gt;     
-      &lt;/div&gt;   
-    &lt;/BrowserRouter&gt;   
-  )  
-}  
+const Root = () => {
+  return (
+    <BrowserRouter>
+      <div>
+        <Match exactly pattern="/" component={App} />  
+        <Miss component={NotFound} />  
+      </div>
+    </BrowserRouter>
+  )
+}
 
+ReactDOM.render(
+  <Root />,
+  document.getElementById('root')
+);
 
-ReactDOM.render(  
-  &lt;Root /&gt; ,  
-  document.getElementById('root')  
-);  
 ```
 
