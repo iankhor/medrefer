@@ -37,22 +37,20 @@ export default App
 
 9. In NotFound.js, add the following code.
 ```
-import React, { Component } from 'react'
-import StaticHTMLTemplate from './_TemplateStaticHTML'
+import React, { Component } from 'react'  
+import StaticHTMLTemplate from './_TemplateStaticHTML'  
 
-class NotFound extends Component {
-    render(){
-        return(
-            &lt;div&gt; 
-                &lt;h1&gt; Not Found page&lt;/h1&gt;
-            &lt;/div&gt;
-        )
-    }
-}
+class NotFound extends Component {  
+    render(){  
+        return(  
+            &lt;div&gt;   
+                &lt;h1&gt; Not Found page&lt;/h1&gt;  
+            &lt;/div&gt;  
+        )  
+    }  
+}  
 
-export default NotFound
-
-
+export default NotFound  
 ```
 
 10. In the index.js file, add the following code.
