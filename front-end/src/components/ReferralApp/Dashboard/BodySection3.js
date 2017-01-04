@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { RaisedButton } from 'material-ui'
 
-const BodySection3 = (props) => {
-        return (
+class BodySection3 extends Component {
+    render(){
+        return(
             <div className="generic-center">
-                <h1>This is from BodySection3</h1>
+                 <RaisedButton label="Post a referral" primary={true} />
             </div>
         )
+    }
 }
 
+
 export default BodySection3
+

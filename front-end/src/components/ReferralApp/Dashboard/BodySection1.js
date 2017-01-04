@@ -1,13 +1,16 @@
-import React from 'react'
-import { Link } from 'react-router'
+import React, { Component } from 'react'
+import { RaisedButton } from 'material-ui'
 
-const BodySection1 = (props) => {
-        return (
+class BodySection1 extends Component {
+    render(){
+        return(
             <div className="generic-center">
-                <h1>This is from BodySection1</h1>
-                <Link to="/placeholder">Post a referral</Link>
+                 <RaisedButton label="Post a referral" primary={true} />
             </div>
         )
+    }
 }
 
+
 export default BodySection1
+
