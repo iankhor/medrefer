@@ -16,3 +16,16 @@ h1 {
 .borderless {
   border: none;
 }
+
+.dashboard-analytics {
+  height: 100;
+  width: 100;
+  margin: 20;
+  textAlign: 'center';
+  display: 'inline-block';
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}

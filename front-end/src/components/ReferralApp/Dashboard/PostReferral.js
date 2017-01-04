@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { RaisedButton } from 'material-ui'
 
-class BodySection1 extends Component {
+class PostReferral extends Component {
     render(){
         return(
             <div className="generic-center">
@@ -12,5 +12,5 @@ class BodySection1 extends Component {
 }
 
 
-export default BodySection1
+export default PostReferral
 
