@@ -8,7 +8,7 @@ class Referral extends Component {
     render(){
         return(
         <MuiThemeProvider>
-            <div className="generic-center borderless"> 
+            <div className=""> 
                 Referral of Mr.[Insert a name] page
                 {/*<Header />*/}
                 <Form />
