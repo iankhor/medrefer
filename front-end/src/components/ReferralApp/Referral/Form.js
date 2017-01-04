@@ -10,6 +10,7 @@ import {Toolbar, ToolbarGroup, ToolbarSeparator, ToolbarTitle} from 'material-ui
 import FlatButton from 'material-ui/FlatButton'
 import TextField from 'material-ui/TextField';
 import DatePicker from 'material-ui/DatePicker';
+import KickAssDebugger from '../../KickAssDebugger'
 
 const styles =  {
   whiteBackgroundForm: {
@@ -48,6 +49,8 @@ class Form extends Component {
       const patientData = {
               ...this.state.patientData, 
               [e.target.name] : e.target.value}
+
+      this.setState( {patientData})
       
       console.log(patientData)
     }
@@ -120,6 +123,9 @@ class Form extends Component {
               onChange={(e) => this._handleChange(e)}
             />
         </div>
+
+        <KickAssDebugger data={this.state.patientData}/>
+
       </div>
     );
   }
