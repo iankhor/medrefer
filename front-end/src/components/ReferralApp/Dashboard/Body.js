@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
-import BodySection1 from './BodySection1'
-import BodySection2 from './BodySection2'
-import BodySection3 from './BodySection3'
+import Analytics from './Analytics'
+import PostReferral from './PostReferral'
+import ReferralsList from './ReferralsList'
 
 class Body extends Component {
     render(){
         return(
             <div className="generic-center dummy-height"> 
                 <h1>[This is a Body Wrapper]</h1>
-                <BodySection1 />
-                <BodySection2 />
-                <BodySection3 />
+                <PostReferral />
+                <Analytics />
+                <ReferralsList />
             </div>
         )
     }
