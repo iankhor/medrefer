@@ -12,7 +12,7 @@ class Referral extends Component {
                 Referral of Mr.[Insert a name] page
                 {/*<Header />*/}
                 <Form />
-                <Footer />
+                {/*<Footer />*/}
             </div>
         </MuiThemeProvider>
         )
