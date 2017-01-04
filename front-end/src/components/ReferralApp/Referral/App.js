@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Header from '../../Shared/Header'
-import Body from './Body'
+import Form from './Form'
 import Footer from '../../Shared/Footer'
 
 class Referral extends Component {
@@ -8,8 +8,8 @@ class Referral extends Component {
         return(
             <div className="generic-center borderless"> 
                 Referral of Mr.[Insert a name] page
-                <Header />
-                <Body />
+                {/*<Header />*/}
+                <Form />
                 <Footer />
             </div>
         )
