@@ -3,9 +3,6 @@ import React, { Component } from 'react'
 import Body from './Body'
 import Footer from '../../Shared/Footer'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import injectTapEventPlugin from 'react-tap-event-plugin';
-
-injectTapEventPlugin();
 
 class ReferralDashboard extends Component {
     render(){
