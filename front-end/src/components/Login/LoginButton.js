@@ -1,7 +1,10 @@
 import React from 'react';
+import 'whatwg-fetch'; // Polyfills window.fetch
+import fetchAPI from '../../api/fetchAPI'
 import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
 import RaisedButton from 'material-ui/RaisedButton';
+import TextField from 'material-ui/TextField';
 
 /**
  * A modal dialog can only be closed by selecting one of the actions.
@@ -24,26 +27,34 @@ export default class LoginButton extends React.Component {
       <FlatButton
         label="Cancel"
         primary={true}
+        disabled={true}
         onTouchTap={this.handleClose}
       />,
       <FlatButton
-        label="Submit"
+        label="Login"
         primary={true}
-        disabled={true}
+        disabled={false}
         onTouchTap={this.handleClose}
       />,
     ];
 
     return (
       <div>
-        <RaisedButton label="Modal Dialog" onTouchTap={this.handleOpen} />
+        <RaisedButton label="Login here" onTouchTap={this.handleOpen} />
         <Dialog
-          title="Dialog With Actions"
+          title="Welcome to MedRefer"
           actions={actions}
           modal={true}
           open={this.state.open}
         >
-          Only actions can close this dialog.
+         <TextField
+          defaultValue="Email"
+          floatingLabelText="Enter Email"
+        />
+        <TextField
+          defaultValue="Password"
+          floatingLabelText="Enter password"
+        />
         </Dialog>
       </div>
     );
