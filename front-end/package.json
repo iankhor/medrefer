@@ -10,17 +10,20 @@
   },
   "dependencies": {
     "history": "^4.5.0",
+    "list": "^0.9.5",
     "material-ui": "^0.16.6",
     "react": "^15.4.1",
     "react-bootstrap": "^0.30.7",
     "react-dom": "^15.4.1",
     "react-parallax": "^1.2.2",
     "react-router": "4.0.0-alpha.4",
-    "react-tap-event-plugin": "^2.0.1"
+    "react-tap-event-plugin": "^2.0.1",
+    "whatwg-fetch": "^2.0.1"
   },
   "scripts": {
-    "start": "PORT=9000 react-scripts start",
-    "watch": "concurrently --names \"webpack, stylus\" --prefix name \"npm run start\" \"npm run styles:watch\"",
+    "start" : "list ./build --single",
+    "begin": "PORT=9000 react-scripts start",
+    "watch": "concurrently --names \"webpack, stylus\" --prefix name \"npm run begin\" \"npm run styles:watch\"",
     "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
     "styles:watch": "stylus -u autoprefixer-stylus -w ./src/css/style.styl -o ./src/css/style.css",
     "build": "react-scripts build",
