@@ -8,6 +8,9 @@ import NotFound from './components/NotFound';
 import './css/style.css'
 import { BrowserRouter , Match, Miss } from 'react-router'
 
+import injectTapEventPlugin from 'react-tap-event-plugin';
+injectTapEventPlugin()
+
 
 const Root = () => {
   return (

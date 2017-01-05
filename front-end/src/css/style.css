@@ -1,21 +1,36 @@
-* {
-  font-family: 'Roboto'
-}
 h1 {
   font-size: 2em;
 }
-
+body {
+  font-family: 'Roboto';
+}
 .generic-center {
   margin: auto;
   padding: 2rem;
   border: 2px solid #000;
   text-align: center;
 }
-
 .dummy-height {
   min-height: 500px;
 }
-
+.border {
+  border: 2px solid #000;
+}
 .borderless {
   border: none;
+}
+.dashboard-analytics {
+  height: 100;
+  width: 100;
+  margin: 20;
+  textAlign: 'center';
+  display: 'inline-block';
+}
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }

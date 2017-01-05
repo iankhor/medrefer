@@ -1,17 +1,20 @@
 import React, { Component } from 'react'
 import Header from '../../Shared/Header'
-import Body from './Body'
+import Form from './Form'
 import Footer from '../../Shared/Footer'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 class Referral extends Component {
     render(){
         return(
-            <div className="generic-center borderless"> 
+        <MuiThemeProvider>
+            <div className=""> 
                 Referral of Mr.[Insert a name] page
-                <Header />
-                <Body />
-                <Footer />
+                {/*<Header />*/}
+                <Form />
+                {/*<Footer />*/}
             </div>
+        </MuiThemeProvider>
         )
     }
 }
