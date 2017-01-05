@@ -9,7 +9,8 @@ function whitelistUser({ email }) {
 }
 
 // Sign in
-router.post('/signin', passport.authenticate('local'), function(req, res) {
+router.post('/signin', passport.authenticate('local' , { failWithError: true }),
+function(req, res) {
     res.json(whitelistUser(req.user));
 });
 
