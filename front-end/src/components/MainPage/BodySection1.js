@@ -1,8 +1,10 @@
 import React from 'react'
+import { Parallax, Background } from 'react-parallax';
 
 const BodySection1 = (props) => {
         return (
-            <div className="generic-center">
+            <div className="generic-center" style = {{backgroundColor: '#FFF'}}>
+
               <h2>About Conduit Health</h2>
               <p>Conduit Health is a Telepsychiatry and Telehealth service founded in 2014.</p>
               <p>Conduit Health aims to deliver specialist health care in an effective,

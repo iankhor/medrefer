@@ -2,7 +2,7 @@ import React from 'react'
 
 const BodySection2 = (props) => {
         return (
-            <div className="generic-center">
+            <div className="generic-center" style = {{backgroundColor: '#FFF'}}>
                 <h2>Emergency</h2>
                 <h3>In case of an Emergency, please read below:</h3>
                 <p>Our services does not offer crisis intervention treatment.</p>
