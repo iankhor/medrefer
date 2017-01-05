@@ -23,7 +23,7 @@
   "scripts": {
     "start" : "list ./build --single",
     "begin": "PORT=9000 react-scripts start",
-    "watch": "concurrently --names \"webpack, stylus\" --prefix name \"npm run start\" \"npm run styles:watch\"",
+    "watch": "concurrently --names \"webpack, stylus\" --prefix name \"npm run begin\" \"npm run styles:watch\"",
     "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
     "styles:watch": "stylus -u autoprefixer-stylus -w ./src/css/style.styl -o ./src/css/style.css",
     "build": "react-scripts build",
