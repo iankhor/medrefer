@@ -5,11 +5,18 @@ import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
 import RaisedButton from 'material-ui/RaisedButton';
 import TextField from 'material-ui/TextField';
+import { signIn } from '../../api/auth'
 
 /**
  * A modal dialog can only be closed by selecting one of the actions.
  */
 export default class LoginButton extends Component {
+  constructor() {
+    super()
+
+    this._handleChange = this._handleChange.bind(this)
+  }
+
   state = {
     open: false,
   };
@@ -21,6 +28,10 @@ export default class LoginButton extends Component {
   handleClose = () => {
     this.setState({open: false});
   };
+
+  _handleChange(e) {
+    console.log(e.target.value)
+  }
 
   render() {
     const actions = [
@@ -47,21 +58,26 @@ export default class LoginButton extends Component {
     return (
       <div>
         <RaisedButton label="Login here" onTouchTap={this.handleOpen} />
-        <Dialog
-          title="Welcome to MedRefer"
-          actions={actions}
-          modal={true}
-          open={this.state.open}
-        >
-         <TextField
-          defaultValue="Email"
-          floatingLabelText="Enter Email"
-        />
-        <TextField
-          defaultValue="Password"
-          floatingLabelText="Enter password"
-        />
-        </Dialog>
+          <Dialog
+            title="Welcome to MedRefer"
+            actions={actions}
+            modal={true}
+            open={this.state.open}
+          >
+          <TextField
+            defaultValue=""
+            floatingLabelText="Enter Email"
+            name="email"
+            onChange={(e) => this._handleChange(e)}
+          />
+          <TextField
+            defaultValue=""
+            floatingLabelText="Enter password"
+            name="password"
+            type="password"
+            onChange={(e) => this._handleChange(e)}
+          />
+          </Dialog>
       </div>
     );
   }
