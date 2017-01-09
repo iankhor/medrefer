@@ -9,6 +9,7 @@
     "stylus": "^0.54.5"
   },
   "dependencies": {
+    "axios": "^0.15.3",
     "history": "^4.5.0",
     "list": "^0.9.5",
     "material-ui": "^0.16.6",
@@ -21,8 +22,7 @@
     "whatwg-fetch": "^2.0.1"
   },
   "scripts": {
-    "start" : "list ./build --single",
-    "begin": "PORT=9000 react-scripts start",
+    "start": "PORT=9000 react-scripts start",
     "watch": "concurrently --names \"webpack, stylus\" --prefix name \"npm run begin\" \"npm run styles:watch\"",
     "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
     "styles:watch": "stylus -u autoprefixer-stylus -w ./src/css/style.styl -o ./src/css/style.css",

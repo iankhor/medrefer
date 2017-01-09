@@ -3,14 +3,14 @@ import    fetchAPI,
           patchAPI } from './fetchAPI'
 
 
-export function signIn( { email, passowrd } ) {
+export function signIn( { email, password } ) {
   return postAPI('/auth/signin', {
     email,
     password
   })
 }
 
-export function signUp( { email, passowrd } ) {
+export function signUp( { email, password } ) {
   return postAPI('/auth/register', {
     email,
     password
